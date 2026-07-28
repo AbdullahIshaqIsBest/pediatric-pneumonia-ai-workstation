@@ -1,0 +1,79 @@
+# ==============================================================================
+# Pediatric Pneumonia Classification — Root .gitignore
+# ==============================================================================
+
+# 1. Ignore large raw dataset folders & temporary data archives
+/data/
+/dataset/
+/datasets/
+/raw_data/
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.csv
+
+# 2. SAFELY TRACK trained checkpoint (.pth) files and web app code!
+# We explicitly un-ignore any .pth models in saved_models/ and outputs/
+!saved_models/*.pth
+!outputs/*.pth
+!best_pneumonia_model.pth
+!best_resnet50_pneumonia.pth
+!best_model.pth
+
+# 3. Python & PyTorch cache / logs
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+*.manifest
+*.spec
+*.log
+*.tmp
+.cache/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# 4. Environment & Secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+venv/
+ENV/
+env/
+.venv/
+
+# 5. IDEs & OS
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# 6. Next.js Frontend build artifacts & dependencies
+/frontend/node_modules/
+/frontend/.next/
+/frontend/out/
+/frontend/build/
+/frontend/*.tsbuildinfo
+/frontend/next-env.d.ts
