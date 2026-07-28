@@ -1,0 +1,48 @@
+# ==============================================================================
+# Pediatric Pneumonia Workstation — Root .dockerignore
+# ==============================================================================
+
+# Ignore frontend build files & heavy node_modules
+/frontend/node_modules
+/frontend/.next
+/frontend/out
+/frontend/build
+
+# Ignore large raw datasets & archives
+/data
+/dataset
+/datasets
+/raw_data
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.csv
+
+# Ignore Git & documentation
+.git
+.gitignore
+*.md
+
+# Python cache & logs
+__pycache__
+*.py[cod]
+*$py.class
+*.log
+*.tmp
+.cache
+.pytest_cache
+.mypy_cache
+.ruff_cache
+venv
+ENV
+env
+.venv
+
+# IDEs & OS
+.vscode
+.idea
+*.swp
+*.swo
+.DS_Store
+Thumbs.db

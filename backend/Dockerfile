@@ -8,7 +8,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         libglib2.0-0 libgl1-mesa-glx \
     && rm -rf /var/lib/apt/lists/*
 
-COPY requirements.txt .
+COPY backend/requirements.txt requirements.txt
 
 # CPU-only PyTorch keeps the image small (~900 MB vs ~4 GB for CUDA)
 RUN pip install --no-cache-dir \
