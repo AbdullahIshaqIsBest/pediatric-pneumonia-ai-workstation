@@ -19,9 +19,17 @@
 torch>=2.1.0
 torchvision>=0.16.0
 
+# ---- API & HF Spaces Hosting (100% Free Tier) ----
+fastapi>=0.111.0
+uvicorn[standard]>=0.29.0
+python-multipart>=0.0.9
+pydantic>=2.0.0
+gradio>=4.0.0
+reportlab>=4.1.0
+
 # ---- Image Processing ----
 Pillow>=10.0.0
-opencv-python>=4.8.0
+opencv-python-headless>=4.8.0
 
 # ---- Scientific Computing ----
 numpy>=1.24.0
